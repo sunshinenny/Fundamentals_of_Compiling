@@ -1,0 +1,27 @@
+E->Te
+e->+Te
+e->~
+T->Ft
+t->*Ft
+t->~
+F->(E)
+F->i
+
+First(E)={( i }
+First(e)={+ ~ }
+First(T)={( i }
+First(t)={* ~ }
+First(F)={( i }
+
+Follow(E)={# ) }
+Follow(e)={# ) }
+Follow(T)={# ) + }
+Follow(t)={# ) + }
+Follow(F)={# ) + * }
+
+i	(	)	*	+	#	
+1	1	-1	-2	-2	-1	
+-2	-2	0	-2	1	0	
+1	1	-1	-2	-1	-1	
+-2	-2	0	1	0	0	
+1	1	-1	-1	-1	-1	
